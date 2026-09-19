@@ -3824,69 +3824,1837 @@ const gameContent = [
     intensity: 5
 },
 
+   /* =========================================
+   RAPID FIRE
+========================================= */
+
+// GENERAL — LEVEL 1
+{
+    text: "Name three things you cannot live without.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three countries you want to visit.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three foods you love.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+
+// GENERAL — LEVEL 2
+{
+    text: "Name five things you would take to a deserted island.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three things on your bucket list.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three skills you wish you had.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+
+// GENERAL — LEVEL 3
+{
+    text: "Name five things you would buy if you suddenly became rich.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name four places you would move to if you could live anywhere.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name five things you are grateful for.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+
+// GENERAL — LEVEL 4
+{
+    text: "Name five goals you want to accomplish before you turn 30.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name five things you would change about your daily routine.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name five things you would do if you had a completely free year.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+
+// GENERAL — LEVEL 5
+{
+    text: "Name five things you would risk everything to achieve.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name five major changes you would make if you could restart your life.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name five things you would do if you knew you could not fail.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+
+// FUNNY — LEVEL 1
+{
+    text: "Name three ridiculous excuses for being late.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three foods you would never eat.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three things that instantly annoy you.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+
+// FUNNY — LEVEL 2
+{
+    text: "Name five embarrassing things someone could do on a first date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three terrible superpowers.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name five things you would never want your parents to see on your phone.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+
+// FUNNY — LEVEL 3
+{
+    text: "Name five ways someone could embarrass themselves at a party.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name five terrible excuses for not replying to a message.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name five things you would do if you woke up famous tomorrow.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+
+// FUNNY — LEVEL 4
+{
+    text: "Name five ways to ruin a perfectly good date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name five ridiculous reasons someone could get kicked out of a party.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name five things you would do if you had to become a completely different person for one day.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+
+// FUNNY — LEVEL 5
+{
+    text: "Name five things you would do if you became invisible for 24 hours.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name five ways you could become famous for something completely ridiculous.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name five things you would do if everyone in this room had to obey you for one hour.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DEEP — LEVEL 1
+{
+    text: "Name three people who have positively influenced your life.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three things that make you genuinely happy.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three qualities you value in people.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DEEP — LEVEL 2
+{
+    text: "Name three lessons you have learned from difficult experiences.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three things you are proud of yourself for.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three things you want to improve about yourself.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DEEP — LEVEL 3
+{
+    text: "Name three decisions that changed the direction of your life.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name three things you would tell your younger self.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name three things you are currently working toward.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DEEP — LEVEL 4
+{
+    text: "Name three fears you have overcome.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name three things you would change about your past if you could.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name three truths about yourself that you have only recently accepted.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DEEP — LEVEL 5
+{
+    text: "Name three things you are afraid to lose.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name three things you would change if you knew you only had one year to live.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name three things you have never told most people.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DATING — LEVEL 1
+{
+    text: "Name three qualities you look for in someone you date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three things that make a great first date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three dating green flags.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DATING — LEVEL 2
+{
+    text: "Name three things that can instantly ruin a date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three ways to tell someone is interested in you.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three reasons someone might lose interest after a date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DATING — LEVEL 3
+{
+    text: "Name three signs that someone is catching feelings.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name three reasons people stay in relationships they should leave.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name three things you would never tolerate in a relationship.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DATING — LEVEL 4
+{
+    text: "Name three reasons someone might fall for the wrong person.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name three things that can make a friendship turn romantic.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name three reasons someone might go back to an ex.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DATING — LEVEL 5
+{
+    text: "Name five reasons someone might risk a friendship for love.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name five signs that a relationship is becoming complicated.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name five reasons someone might fall for a person they should avoid.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+
+// SPICY — LEVEL 1
+{
+    text: "Name three things that make someone instantly attractive.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three flirting techniques that actually work.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name three things that create romantic chemistry.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+
+// SPICY — LEVEL 2
+{
+    text: "Name three things that can make a date unexpectedly exciting.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three ways someone can show they are flirting.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Name three things you find attractive that have nothing to do with appearance.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+
+// SPICY — LEVEL 3
+{
+    text: "Name three places where an unexpected romantic moment could happen.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name three signs that two people have chemistry.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Name three bold moves someone could make on a date.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+
+// SPICY — LEVEL 4
+{
+    text: "Name three reasons someone might secretly flirt with a friend.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name three things that can make a casual connection complicated.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Name three situations where attraction could completely change a friendship.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+
+// SPICY — LEVEL 5
+{
+    text: "Name three things that could turn a harmless night into a memorable one.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name three reasons someone might develop unexpected feelings.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Name three things that could make a romantic situation seriously complicated.",
+    type: "challenge",
+    game: "rapid-fire",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+
     /* =========================================
-       RAPID FIRE
-    ========================================= */
+   TWO TRUTHS & A LIE
+========================================= */
 
-    {
-        text: "Name three things you would take to a deserted island.",
-        type: "challenge",
-        game: "rapid-fire",
-        category: "general",
-        ageRating: "general",
-        intensity: 2,
-        active: true
-    },
+// GENERAL — LEVEL 1
+{
+    text: "Share two true facts about your favorite foods and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true facts about places you have visited and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true facts about your hobbies and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
 
-    {
-        text: "Name five foods you could eat every week without getting tired of them.",
-        type: "challenge",
-        game: "rapid-fire",
-        category: "funny",
-        ageRating: "general",
-        intensity: 2,
-        active: true
-    },
+// GENERAL — LEVEL 2
+{
+    text: "Share two true facts about your childhood and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true facts about your biggest achievements and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true facts about your travel experiences and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
 
+// GENERAL — LEVEL 3
+{
+    text: "Share two true facts about something adventurous you have done and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true facts about a difficult experience you overcame and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true facts about your future plans and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+
+// GENERAL — LEVEL 4
+{
+    text: "Share two true facts about something unexpected you have done and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true facts about a major decision you have made and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true facts about something most people would never guess about you and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+
+// GENERAL — LEVEL 5
+{
+    text: "Share two true facts about a life-changing experience and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true facts about something you have always wanted to do and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true facts about a secret ambition and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+
+// FUNNY — LEVEL 1
+{
+    text: "Share two true funny habits you have and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true embarrassing childhood stories and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true facts about weird foods you have tried and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+
+// FUNNY — LEVEL 2
+{
+    text: "Share two true embarrassing moments and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true ridiculous excuses you have used and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true strange things you believed as a child and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+
+// FUNNY — LEVEL 3
+{
+    text: "Share two true stories about doing something embarrassing in public and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true stories about getting caught doing something silly and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true stories about awkward conversations and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+
+// FUNNY — LEVEL 4
+{
+    text: "Share two true stories about something ridiculous you did to impress someone and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true stories about getting into trouble and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true things that would make your friends laugh and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+
+// FUNNY — LEVEL 5
+{
+    text: "Share two true stories you would be embarrassed to have on video and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true stories about your most chaotic night and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true things you have done that nobody here would expect and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DEEP — LEVEL 1
+{
+    text: "Share two true things that make you happy and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true things you value in friendships and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true things you are grateful for and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DEEP — LEVEL 2
+{
+    text: "Share two true lessons life has taught you and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true things you are proud of and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true things you want to improve about yourself and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DEEP — LEVEL 3
+{
+    text: "Share two true experiences that changed how you see life and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true things you learned from a difficult experience and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true things you want your future self to remember and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DEEP — LEVEL 4
+{
+    text: "Share two true fears you have faced and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true things you have struggled to accept and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true decisions you sometimes question and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DEEP — LEVEL 5
+{
+    text: "Share two true things you rarely tell people about yourself and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true regrets or lessons from your past and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true things you are afraid to admit and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DATING — LEVEL 1
+{
+    text: "Share two true things you like about dating and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true dating green flags you look for and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true things about your ideal date and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DATING — LEVEL 2
+{
+    text: "Share two true things that can make you lose interest in someone and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true dating experiences and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true things you find annoying in someone and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DATING — LEVEL 3
+{
+    text: "Share two true stories about catching feelings and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true things about relationships you have learned and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true things you would never tolerate in a relationship and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DATING — LEVEL 4
+{
+    text: "Share two true stories about falling for the wrong person and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true romantic mistakes and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true things about someone you once had strong feelings for and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DATING — LEVEL 5
+{
+    text: "Share two true stories about a complicated romantic situation and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true things about a relationship decision you regret and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true things about someone you should never have fallen for and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+
+// SPICY — LEVEL 1
+{
+    text: "Share two true things you find attractive in someone and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true things about your flirting style and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Share two true things about your idea of romantic chemistry and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+
+// SPICY — LEVEL 2
+{
+    text: "Share two true flirting experiences and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true things that make someone instantly attractive to you and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Share two true stories about someone making a bold move on you and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+
+// SPICY — LEVEL 3
+{
+    text: "Share two true stories about unexpected chemistry and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true things about a bold romantic move you have made and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Share two true stories about flirting with someone unexpected and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+
+// SPICY — LEVEL 4
+{
+    text: "Share two true stories about a complicated attraction and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true things about someone you secretly found attractive and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Share two true romantic situations that became unexpectedly intense and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+
+// SPICY — LEVEL 5
+{
+    text: "Share two true stories about your boldest romantic decisions and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true things about a romantic situation you never expected and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Share two true stories about unexpected attraction and one lie.",
+    type: "challenge",
+    game: "two-truths-and-a-lie",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
 
     /* =========================================
-       TWO TRUTHS AND A LIE
-    ========================================= */
+   RANDOM CHALLENGE
+========================================= */
 
-    {
-        text: "Tell the group three statements about yourself: two must be true and one must be a lie. Let everyone guess the lie.",
-        type: "challenge",
-        game: "two-truths-and-a-lie",
-        category: "general",
-        ageRating: "general",
-        intensity: 2,
-        active: true
-    },
+// GENERAL — LEVEL 1
+{
+    text: "Do your best impression of someone in this group.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Name five things in the room within five seconds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Give the person next to you a genuine compliment.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
 
+// GENERAL — LEVEL 2
+{
+    text: "Tell the group one interesting fact about yourself.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Describe your dream vacation in exactly ten words.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Act out your morning routine without speaking.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
 
-    /* =========================================
-       RANDOM CHALLENGE
-    ========================================= */
+// GENERAL — LEVEL 3
+{
+    text: "Tell the group about one goal you are currently working toward.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Choose someone and give them a compliment without mentioning their appearance.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Tell a short story about one of your most memorable experiences.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
 
-    {
-        text: "Speak in a dramatic movie-trailer voice for the next 30 seconds.",
-        type: "challenge",
-        game: "random-challenge",
-        category: "funny",
-        ageRating: "general",
-        intensity: 2,
-        active: true
-    },
+// GENERAL — LEVEL 4
+{
+    text: "Let the group choose a harmless nickname for you for the next three rounds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Give a thirty-second motivational speech about something completely random.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Tell the group something you have always wanted to try.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
 
-    {
-        text: "Create a ridiculous product advertisement using an object within reach.",
-        type: "challenge",
-        game: "random-challenge",
-        category: "funny",
-        ageRating: "general",
-        intensity: 3,
-        active: true
-    }
+// GENERAL — LEVEL 5
+{
+    text: "Let another player choose a harmless challenge for you.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Tell the group one thing you would change about your life if you had the chance.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Give a one-minute speech convincing everyone to try something you love.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+
+// FUNNY — LEVEL 1
+{
+    text: "Make your funniest face and hold it for five seconds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Say your name like you are announcing yourself at a championship.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Walk across the room like you are on a runway.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+
+// FUNNY — LEVEL 2
+{
+    text: "Pretend to be a news reporter covering what is happening in this room.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Talk in a dramatic movie-trailer voice for the next thirty seconds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Try to make everyone laugh without touching anyone.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+
+// FUNNY — LEVEL 3
+{
+    text: "Act like you are a celebrity being interviewed about your imaginary new movie.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Give the person opposite you an absurd but convincing compliment.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Pretend to sell a random object in the room like it costs one million naira.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+
+// FUNNY — LEVEL 4
+{
+    text: "Act out a dramatic breakup with an imaginary person.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Create a ridiculous advertisement for the person sitting closest to you.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Perform an imaginary acceptance speech for winning the world's strangest award.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+
+// FUNNY — LEVEL 5
+{
+    text: "Let the group choose a character you must act like for the next two rounds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Perform a thirty-second dramatic monologue about losing something completely ordinary.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Make up a ridiculous conspiracy theory about something in this room.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+
+// SPICY — LEVEL 1
+{
+    text: "Give someone in the group your best confident smile.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Give someone a playful compliment.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Hold eye contact with another player for five seconds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+
+// SPICY — LEVEL 2
+{
+    text: "Give your best flirty introduction as if you just met someone at a party.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Give someone in the group a compliment about their personality.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Describe your ideal date in fifteen seconds.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+
+// SPICY — LEVEL 3
+{
+    text: "Give your best pickup line to another player.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Choose someone and give them your most charming compliment.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Describe your dream date without using the words love, romance, or relationship.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+
+// SPICY — LEVEL 4
+{
+    text: "Choose someone and tell them what makes their personality attractive.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Deliver a dramatic thirty-second confession to your imaginary crush.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Give someone your most confident attempt at a romantic introduction.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+
+// SPICY — LEVEL 5
+{
+    text: "Let another player choose who receives your most convincing pickup line.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Give a thirty-second speech about why someone would make an amazing date.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Choose someone and give them your boldest harmless compliment.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+
+// 18+ — LEVEL 1
+{
+    text: "Describe your idea of an ideal adult date.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+{
+    text: "Give a confident compliment to someone in the group.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+{
+    text: "Describe three qualities you find especially attractive in an adult partner.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+
+// 18+ — LEVEL 2
+{
+    text: "Give your best flirty introduction to another player.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+{
+    text: "Describe your idea of a memorable romantic night.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+{
+    text: "Give someone a compliment that focuses on their personality and charm.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+
+// 18+ — LEVEL 3
+{
+    text: "Give your best pickup line to someone in the group.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+{
+    text: "Describe your most memorable romantic date without naming the person.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+{
+    text: "Give a thirty-second speech explaining what makes someone irresistible to you.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+
+// 18+ — LEVEL 4
+{
+    text: "Give a playful romantic compliment to another consenting player.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+{
+    text: "Describe a romantic scenario you would consider adventurous but comfortable.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+{
+    text: "Give your most convincing thirty-second flirtation without touching anyone.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+
+// 18+ — LEVEL 5
+{
+    text: "Give your boldest harmless pickup line to someone who agrees to receive it.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+{
+    text: "Describe your wildest romantic date idea without getting explicit.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+{
+    text: "Give a thirty-second speech about your ideal adult relationship.",
+    type: "challenge",
+    game: "random-challenge",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+}
 
 ];
 
@@ -4067,16 +5835,25 @@ function validateContent(content) {
             const duplicateKey =
                 `${item.game}|${normalizedText}`;
 
-            if (duplicateTracker.has(duplicateKey)) {
+           if (duplicateTracker.has(duplicateKey)) {
+    errors.push(
+        `${position}: duplicate content detected.`
+    );
 
-                errors.push(
-                    `${position}: duplicate content detected.`
-                );
+    console.error(
+        `DUPLICATE FOUND: ${position}`
+    );
 
-            }
+    console.error(
+        `Game: ${item.game}`
+    );
 
-            duplicateTracker.add(duplicateKey);
+    console.error(
+        `Text: ${item.text}`
+    );
+}
 
+duplicateTracker.add(duplicateKey);
         }
 
     });

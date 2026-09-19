@@ -520,7 +520,7 @@
 }
 
 .quick-play-card::after {
-    content: "⚡";
+    
     position: absolute;
     right: 140px;
     top: -30px;
