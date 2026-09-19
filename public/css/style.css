@@ -208,7 +208,7 @@ button {
 
 
 .btn-primary {
-    background: var(--black);
+    background: var(--brown-light);
     color: var(--white);
 
     box-shadow: var(--shadow-sm);
