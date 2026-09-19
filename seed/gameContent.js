@@ -1582,12 +1582,232 @@ const gameContent = [
         active: true
     },
 
-    /* =========================================
+    
+        /* =========================================
        NEVER HAVE I EVER
     ========================================= */
 
+    /* -----------------------------------------
+       GENERAL — LEVEL 1
+    ----------------------------------------- */
+
     {
-        text: "Never have I ever pretended to be busy to avoid talking to someone.",
+        text: "Never have I ever stayed awake all night because I was watching or playing something.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever forgotten where I left my phone.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever eaten the same meal several days in a row.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever fallen asleep while watching a movie.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       GENERAL — LEVEL 2
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever pretended to understand something when I had no idea what was happening.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever started a hobby and abandoned it after a few days.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever spent money on something I immediately regretted buying.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever lied about being busy to avoid making plans.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       GENERAL — LEVEL 3
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever seriously considered starting my life over somewhere completely different.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever made an important decision without telling anyone first.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever pretended to like something because everyone else liked it.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever taken a completely different path from the one I originally planned.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       GENERAL — LEVEL 4
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever quit something because I was afraid I wouldn't be good enough.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever kept a major decision secret from people close to me.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever regretted not taking an opportunity when I had the chance.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       GENERAL — LEVEL 5
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever completely changed my plans because of one person.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+    {
+        text: "Never have I ever walked away from something important because I knew it was no longer right for me.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "general",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       FUNNY — LEVEL 1–5
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever waved back at someone who wasn't waving at me.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "funny",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever laughed at a joke I didn't understand.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "funny",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever walked into the wrong room with complete confidence.",
         type: "vote",
         game: "never-have-i-ever",
         category: "funny",
@@ -1607,75 +1827,2002 @@ const gameContent = [
     },
 
     {
-        text: "Never have I ever stayed awake all night because I was watching or playing something.",
+        text: "Never have I ever pretended to be on a phone call to avoid talking to someone.",
         type: "vote",
         game: "never-have-i-ever",
-        category: "general",
-        ageRating: "general",
-        intensity: 1,
-        active: true
-    },
-
-
-    /* =========================================
-       MOST LIKELY TO
-    ========================================= */
-
-    {
-        text: "Who is most likely to become famous?",
-        type: "vote",
-        game: "most-likely-to",
-        category: "general",
+        category: "funny",
         ageRating: "general",
         intensity: 2,
         active: true
     },
 
     {
-        text: "Who is most likely to forget where they put their phone?",
+        text: "Never have I ever practiced a conversation in my head before actually having it.",
         type: "vote",
-        game: "most-likely-to",
+        game: "never-have-i-ever",
         category: "funny",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever searched online for something incredibly obvious.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "funny",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever blamed someone else for something I actually did.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "funny",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever laughed at the worst possible moment.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "funny",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever tried to look cool and made the situation dramatically worse.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "funny",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       DEEP — LEVEL 1–5
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever felt genuinely proud of myself for something nobody else noticed.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
         ageRating: "general",
         intensity: 1,
         active: true
     },
 
     {
-        text: "Who is most likely to move to another country on a sudden decision?",
+        text: "Never have I ever changed my opinion about someone after getting to know them better.",
         type: "vote",
-        game: "most-likely-to",
-        category: "funny",
+        game: "never-have-i-ever",
+        category: "deep",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever forgiven someone without telling them.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
         ageRating: "general",
         intensity: 3,
         active: true
     },
 
+    {
+        text: "Never have I ever hidden how I really felt because I didn't want to disappoint someone.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever stayed in a situation longer than I should have because I was afraid of change.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever wished I could apologize to someone but never got the chance.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever let fear stop me from pursuing something I genuinely wanted.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+    {
+        text: "Never have I ever realized too late that I had taken someone important for granted.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "deep",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       DATING — LEVEL 1–5
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever had a crush on someone I saw regularly.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever checked someone's social media because I liked them.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever rehearsed what I was going to say before approaching someone I liked.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever developed feelings for someone I originally considered just a friend.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever gone on a date even though I already knew I wasn't interested.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever pretended not to care about someone when I actually cared a lot.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever fallen for someone I knew wasn't good for me.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever gone back to someone I knew I should have left behind.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+    {
+        text: "Never have I ever stayed in a relationship because I was afraid of being alone.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "dating",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       SPICY — LEVEL 1–5
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever flirted with someone just because I enjoyed the attention.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever tried to make someone jealous.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever had a crush on someone I probably shouldn't have.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever sent a flirty message and immediately regretted it.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever flirted with someone I knew was already interested in someone else.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever intentionally dressed to get someone's attention.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever had undeniable chemistry with someone I barely knew.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever hidden a crush from my friends.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "spicy",
+        ageRating: "general",
+        intensity: 5,
+        active: true
+    },
+
+
+    /* -----------------------------------------
+       18+ — LEVEL 1–5
+    ----------------------------------------- */
+
+    {
+        text: "Never have I ever had a romantic fantasy about someone I know.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever been attracted to someone purely because of their confidence.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 1,
+        active: true
+    },
+
+    {
+        text: "Never have I ever flirted with someone knowing there was strong chemistry between us.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever had a romantic experience that completely surprised me.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 2,
+        active: true
+    },
+
+    {
+        text: "Never have I ever sent a suggestive message and immediately wondered whether I should have.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever kept a romantic or intimate secret from someone close to me.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 3,
+        active: true
+    },
+
+    {
+        text: "Never have I ever been attracted to someone I knew was completely off-limits.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever had chemistry with someone that made it difficult to think clearly.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 4,
+        active: true
+    },
+
+    {
+        text: "Never have I ever tried something intimate mainly because I was curious about it.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 5,
+        active: true
+    },
+
+    {
+        text: "Never have I ever kept thinking about an intimate experience long after it happened.",
+        type: "vote",
+        game: "never-have-i-ever",
+        category: "18+",
+        ageRating: "18+",
+        intensity: 5,
+        active: true
+    },
 
     /* =========================================
-       HOT SEAT
-    ========================================= */
+   MOST LIKELY TO
+========================================= */
 
-    {
-        text: "What is one thing you wish people understood about you?",
-        type: "truth",
-        game: "hot-seat",
-        category: "deep",
-        ageRating: "general",
-        intensity: 3,
-        active: true
-    },
+// GENERAL — LEVEL 1
+{
+    text: "Who is most likely to fall asleep during a movie?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to forget where they put their phone?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to arrive late to a party?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
 
-    {
-        text: "What is a goal you really want to achieve in the next few years?",
-        type: "truth",
-        game: "hot-seat",
-        category: "deep",
-        ageRating: "general",
-        intensity: 3,
-        active: true
-    },
+// GENERAL — LEVEL 2
+{
+    text: "Who is most likely to become friends with a complete stranger?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to plan the next group hangout?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to remember everyone's birthday?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
 
+// GENERAL — LEVEL 3
+{
+    text: "Who is most likely to move to another country someday?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to start their own business?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to become famous?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+
+// GENERAL — LEVEL 4
+{
+    text: "Who is most likely to make a life-changing decision on impulse?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to disappear for a year and come back with an unbelievable story?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to completely change their career?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+
+// GENERAL — LEVEL 5
+{
+    text: "Who is most likely to leave everything behind and start over somewhere new?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to become the most successful person in this group?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to do something nobody here would expect?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+
+// FUNNY — LEVEL 1
+{
+    text: "Who is most likely to laugh at their own joke before finishing it?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to walk into a room and forget why they came?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to send a message to the wrong person?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+
+// FUNNY — LEVEL 2
+{
+    text: "Who is most likely to trip over absolutely nothing?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to practice an argument in the shower?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to accidentally like an old post while stalking someone?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+
+// FUNNY — LEVEL 3
+{
+    text: "Who is most likely to survive the shortest time in a zombie apocalypse?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to become a meme without realizing it?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to lie about being five minutes away when they have not even left?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+
+// FUNNY — LEVEL 4
+{
+    text: "Who is most likely to get kicked out of a fancy event for doing something ridiculous?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to accidentally become the main character of a party?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to make a terrible decision and somehow make it work?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+
+// FUNNY — LEVEL 5
+{
+    text: "Who is most likely to go viral for the most embarrassing reason?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to accidentally start a completely unnecessary argument?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to become famous for doing something completely ridiculous?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DEEP — LEVEL 1
+{
+    text: "Who is most likely to give the best advice?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to keep a friend's secret?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to notice when someone is having a bad day?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DEEP — LEVEL 2
+{
+    text: "Who is most likely to forgive someone after an argument?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to put their friends before themselves?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to remember something meaningful someone said years ago?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DEEP — LEVEL 3
+{
+    text: "Who is most likely to completely reinvent themselves after a difficult experience?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to follow their heart even when it makes no sense?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to take the biggest risk for something they believe in?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DEEP — LEVEL 4
+{
+    text: "Who is most likely to hide their problems while helping everyone else with theirs?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to choose happiness over money?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to walk away from something they love because they know it is unhealthy?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DEEP — LEVEL 5
+{
+    text: "Who is most likely to make a major sacrifice for someone they love?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to completely change their life after one powerful realization?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to choose what is right over what is easy?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DATING — LEVEL 1
+{
+    text: "Who is most likely to have a crush and never tell anyone?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to get shy around someone they like?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to make the first move?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DATING — LEVEL 2
+{
+    text: "Who is most likely to fall for someone they initially disliked?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to send a risky first message?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to catch feelings first?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DATING — LEVEL 3
+{
+    text: "Who is most likely to fall for their best friend?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to stay in a relationship longer than they should?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to reconnect with an ex?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DATING — LEVEL 4
+{
+    text: "Who is most likely to date someone completely unexpected?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to secretly like someone in this group?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to fall for someone they were supposed to keep things casual with?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DATING — LEVEL 5
+{
+    text: "Who is most likely to risk a friendship for a romantic relationship?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to get back together with someone they swore they were done with?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to develop feelings for someone they definitely should not date?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+
+// SPICY — LEVEL 1
+{
+    text: "Who is most likely to flirt with someone just for fun?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to have the smoothest pickup line?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is most likely to make eye contact with their crush across the room?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+
+// SPICY — LEVEL 2
+{
+    text: "Who is most likely to flirt with someone they just met?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to have a secret admirer?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Who is most likely to send a flirty message late at night?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+
+// SPICY — LEVEL 3
+{
+    text: "Who is most likely to kiss someone on a first date?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to have chemistry with someone they just met?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Who is most likely to flirt with someone they know is trouble?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+
+// SPICY — LEVEL 4
+{
+    text: "Who is most likely to make the first move when the chemistry is obvious?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to have a secret romantic history nobody knows about?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Who is most likely to flirt with someone they probably should not?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+
+// SPICY — LEVEL 5
+{
+    text: "Who is most likely to turn a harmless conversation into obvious flirting?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to have the most unexpected romantic story?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Who is most likely to leave a party with a new romantic interest?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+
+// 18+ — LEVEL 1
+{
+    text: "Who is most likely to have the most adventurous dating life?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+{
+    text: "Who is most likely to have a private side nobody in this group knows about?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+{
+    text: "Who is most likely to keep their dating life completely private?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+
+// 18+ — LEVEL 2
+{
+    text: "Who is most likely to have dated someone they met unexpectedly?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+{
+    text: "Who is most likely to have a secret dating app story?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+{
+    text: "Who is most likely to go on a date without telling their friends?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+
+// 18+ — LEVEL 3
+{
+    text: "Who is most likely to have kissed someone they barely knew?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+{
+    text: "Who is most likely to have a secret romantic connection?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+{
+    text: "Who is most likely to keep seeing someone even after saying it was casual?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+
+// 18+ — LEVEL 4
+{
+    text: "Who is most likely to have a secret crush they would never admit publicly?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+{
+    text: "Who is most likely to have a romantic story they would never tell their parents?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+{
+    text: "Who is most likely to get into a complicated relationship situation?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+
+// 18+ — LEVEL 5
+{
+    text: "Who is most likely to have the wildest dating story in this group?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+{
+    text: "Who is most likely to surprise everyone with their romantic history?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+{
+    text: "Who is most likely to do something romantically unexpected on a night out?",
+    type: "vote",
+    game: "most-likely-to",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+
+    /* =========================================
+   HOT SEAT
+========================================= */
+
+// GENERAL — LEVEL 1
+{
+    text: "What is one food you could eat every week?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is your favorite way to spend a free afternoon?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is one thing you are surprisingly good at?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 1
+},
+
+// GENERAL — LEVEL 2
+{
+    text: "What is something you have always wanted to learn?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is the most spontaneous thing you have ever done?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is one place you would love to visit?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 2
+},
+
+// GENERAL — LEVEL 3
+{
+    text: "What is one decision that changed your life?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is something people often misunderstand about you?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is one goal you seriously want to accomplish?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 3
+},
+
+// GENERAL — LEVEL 4
+{
+    text: "What is a decision you would make differently if you had another chance?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is something you are currently trying to change about yourself?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is one dream you have never told most people about?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 4
+},
+
+// GENERAL — LEVEL 5
+{
+    text: "What is one thing you are afraid you might regret not doing?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is the biggest risk you would take for your future?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is something about your life you rarely talk about?",
+    type: "truth",
+    game: "hot-seat",
+    category: "general",
+    ageRating: "general",
+    intensity: 5
+},
+
+// FUNNY — LEVEL 1
+{
+    text: "What is the weirdest thing you believed as a child?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is your most embarrassing everyday habit?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is the strangest food combination you actually enjoy?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 1
+},
+
+// FUNNY — LEVEL 2
+{
+    text: "What is the funniest excuse you have ever used?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is the most awkward thing you have done in public?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is the weirdest nickname you have ever had?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 2
+},
+
+// FUNNY — LEVEL 3
+{
+    text: "What is the most embarrassing message you have ever sent?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is the funniest misunderstanding you have ever been involved in?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is the dumbest reason you have ever been late?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 3
+},
+
+// FUNNY — LEVEL 4
+{
+    text: "What is the most embarrassing thing someone has caught you doing?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is a ridiculous lie you told that somehow worked?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is the funniest thing you have done because you thought nobody was watching?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 4
+},
+
+// FUNNY — LEVEL 5
+{
+    text: "What is your most embarrassing story that your friends still remember?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is the most ridiculous thing you have done to impress someone?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is one embarrassing thing you would never want recorded?",
+    type: "truth",
+    game: "hot-seat",
+    category: "funny",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DEEP — LEVEL 1
+{
+    text: "What is something that always makes you feel better?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "Who is someone you really appreciate?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is one quality you value most in a friend?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DEEP — LEVEL 2
+{
+    text: "What is something you wish more people understood about you?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is one lesson life has taught you recently?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is something you are genuinely proud of?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DEEP — LEVEL 3
+{
+    text: "What is something you have outgrown?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is a mistake that taught you an important lesson?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is something you wish you had handled differently?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DEEP — LEVEL 4
+{
+    text: "What is one fear that has influenced your decisions?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "When was the last time you felt truly understood?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is something you are still learning to accept about yourself?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DEEP — LEVEL 5
+{
+    text: "What is a part of yourself you rarely let people see?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is something you are afraid to admit even to yourself?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is the hardest truth you have had to accept?",
+    type: "truth",
+    game: "hot-seat",
+    category: "deep",
+    ageRating: "general",
+    intensity: 5
+},
+
+// DATING — LEVEL 1
+{
+    text: "What is your biggest green flag in someone you are dating?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is your favorite kind of first date?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is one thing that instantly makes someone attractive to you?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 1
+},
+
+// DATING — LEVEL 2
+{
+    text: "Have you ever liked someone who did not know you liked them?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is your biggest dating red flag?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Have you ever pretended not to like someone when you actually did?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 2
+},
+
+// DATING — LEVEL 3
+{
+    text: "What is the biggest mistake you have made while dating?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Have you ever caught feelings when you planned to keep things casual?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is something you would never tolerate in a relationship?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 3
+},
+
+// DATING — LEVEL 4
+{
+    text: "Have you ever fallen for someone you knew was a bad idea?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Have you ever checked someone's social media because you were jealous?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is the closest you have come to confessing feelings and backing out?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 4
+},
+
+// DATING — LEVEL 5
+{
+    text: "What is something about your romantic life you would never post online?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Have you ever stayed in a relationship longer than you knew you should?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is the most complicated romantic situation you have experienced?",
+    type: "truth",
+    game: "hot-seat",
+    category: "dating",
+    ageRating: "general",
+    intensity: 5
+},
+
+// SPICY — LEVEL 1
+{
+    text: "What kind of flirting works on you every time?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is your favorite kind of romantic attention?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+{
+    text: "What is the most attractive personality trait someone can have?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 1
+},
+
+// SPICY — LEVEL 2
+{
+    text: "Have you ever flirted with someone just to see if they would flirt back?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "What is your favorite type of romantic compliment?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+{
+    text: "Have you ever had obvious chemistry with someone you barely knew?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 2
+},
+
+// SPICY — LEVEL 3
+{
+    text: "Have you ever kissed someone when you did not expect to?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "What is the boldest move you have made on someone you liked?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+{
+    text: "Have you ever developed feelings for someone you were only supposed to flirt with?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 3
+},
+
+// SPICY — LEVEL 4
+{
+    text: "What is the most daring thing you have done because you were attracted to someone?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "Have you ever had a crush on someone you absolutely should not have?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+{
+    text: "What is one romantic secret you have never told your friends?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 4
+},
+
+// SPICY — LEVEL 5
+{
+    text: "What is the boldest romantic decision you have ever made?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "Have you ever wanted someone you knew you should stay away from?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+{
+    text: "What is one romantic experience you would probably never tell your family about?",
+    type: "truth",
+    game: "hot-seat",
+    category: "spicy",
+    ageRating: "general",
+    intensity: 5
+},
+
+// 18+ — LEVEL 1
+{
+    text: "What is your biggest turn-on in a romantic situation?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+{
+    text: "What kind of romantic chemistry do you find hardest to resist?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+{
+    text: "What is one adult dating experience you would like to have someday?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 1
+},
+
+// 18+ — LEVEL 2
+{
+    text: "Have you ever had a crush on someone you knew was off-limits?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+{
+    text: "Have you ever gone on a date mainly because you were physically attracted to the person?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+{
+    text: "What is the most attractive thing someone can do without saying a word?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 2
+},
+
+// 18+ — LEVEL 3
+{
+    text: "Have you ever had a romantic connection that was difficult to keep secret?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+{
+    text: "What is the boldest thing you have done because you were strongly attracted to someone?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+{
+    text: "Have you ever been attracted to someone you knew was completely wrong for you?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 3
+},
+
+// 18+ — LEVEL 4
+{
+    text: "What is a romantic fantasy you are comfortable talking about?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+{
+    text: "Have you ever kept seeing someone even though you knew it was complicated?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+{
+    text: "What is something you have done in a relationship that surprised even you?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 4
+},
+
+// 18+ — LEVEL 5
+{
+    text: "What is the most unexpected romantic experience you have had?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+{
+    text: "What is one intimate experience you would consider adventurous but still comfortable discussing?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
+{
+    text: "What is a private side of your romantic life that most people would never guess?",
+    type: "truth",
+    game: "hot-seat",
+    category: "18+",
+    ageRating: "18+",
+    intensity: 5
+},
 
     /* =========================================
        RAPID FIRE
