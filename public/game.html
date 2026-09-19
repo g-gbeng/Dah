@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Set Up Your Game | Dah!</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand">
+                Dah<span>!</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="index.html#how-it-works">
+                    How It Works
+                </a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <a
+                href="games.html"
+                class="btn btn-primary header-btn"
+            >
+                All Games
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="index.html#how-it-works">
+                How It Works
+            </a>
+            <a href="about.html">About</a>
+
+            <a
+                href="games.html"
+                class="btn btn-primary mobile-play-btn"
+            >
+                All Games
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="game-page">
+
+        <section class="game-config-section">
+
+            <div class="container">
+
+                <!-- BACK LINK -->
+                <a href="games.html" class="back-link">
+                    <span aria-hidden="true">←</span>
+                    Back to Games
+                </a>
+
+
+                <!-- LOADING -->
+                <div
+                    class="game-status"
+                    id="gameLoading"
+                >
+                    <div class="loading-spinner"></div>
+                    <p>Loading your game...</p>
+                </div>
+
+
+                <!-- ERROR -->
+                <div
+                    class="game-status hidden"
+                    id="gameError"
+                >
+                    <div class="status-icon">!</div>
+
+                    <h2>Something went wrong</h2>
+
+                    <p id="gameErrorMessage">
+                        We couldn't load this game.
+                    </p>
+
+                    <a
+                        href="games.html"
+                        class="btn btn-primary"
+                    >
+                        Browse Games
+                    </a>
+                </div>
+
+
+                <!-- CONFIGURATION CONTENT -->
+                <div
+                    class="game-config hidden"
+                    id="gameConfig"
+                >
+
+                    <div class="game-config-heading">
+
+                        <div
+                            class="selected-game-icon"
+                            id="gameIcon"
+                        >
+                            🎲
+                        </div>
+
+                        <div>
+                            <p class="eyebrow">
+                                Let's get started
+                            </p>
+
+                            <h1 id="gameName">
+                                Your Game
+                            </h1>
+
+                            <p id="gameDescription">
+                                Set up your game and get ready
+                                to have some fun.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- CATEGORY -->
+                    <section class="config-card">
+
+                        <div class="config-card-heading">
+
+                            <div>
+                                <span class="config-step">
+                                    01
+                                </span>
+
+                                <h2>Choose a category</h2>
+
+                                <p>
+                                    What kind of questions or
+                                    challenges are you in the mood for?
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="option-grid"
+                            id="categoryOptions"
+                        >
+                            <!-- Categories added with JavaScript -->
+                        </div>
+
+                    </section>
+
+
+                    <!-- INTENSITY -->
+                    <section class="config-card">
+
+                        <div class="config-card-heading">
+
+                            <div>
+                                <span class="config-step">
+                                    02
+                                </span>
+
+                                <h2>Choose your intensity</h2>
+
+                                <p>
+                                    How bold do you want to get?
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="intensity-options"
+                            id="intensityOptions"
+                        >
+
+                            <label class="intensity-option">
+                                <input
+                                    type="radio"
+                                    name="intensity"
+                                    value="1"
+                                >
+
+                                <span class="intensity-content">
+                                    <strong>Level 1</strong>
+                                    <small>Chill</small>
+                                </span>
+                            </label>
+
+                            <label class="intensity-option">
+                                <input
+                                    type="radio"
+                                    name="intensity"
+                                    value="2"
+                                >
+
+                                <span class="intensity-content">
+                                    <strong>Level 2</strong>
+                                    <small>Fun</small>
+                                </span>
+                            </label>
+
+                            <label class="intensity-option">
+                                <input
+                                    type="radio"
+                                    name="intensity"
+                                    value="3"
+                                    checked
+                                >
+
+                                <span class="intensity-content">
+                                    <strong>Level 3</strong>
+                                    <small>Bold</small>
+                                </span>
+                            </label>
+
+                            <label class="intensity-option">
+                                <input
+                                    type="radio"
+                                    name="intensity"
+                                    value="4"
+                                >
+
+                                <span class="intensity-content">
+                                    <strong>Level 4</strong>
+                                    <small>Spicy</small>
+                                </span>
+                            </label>
+
+                            <label class="intensity-option">
+                                <input
+                                    type="radio"
+                                    name="intensity"
+                                    value="5"
+                                >
+
+                                <span class="intensity-content">
+                                    <strong>Level 5</strong>
+                                    <small>Wild</small>
+                                </span>
+                            </label>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- AGE RATING -->
+                    <section
+                        class="config-card age-rating-card"
+                        id="ageRatingCard"
+                    >
+
+                        <div class="config-card-heading">
+
+                            <div>
+                                <span class="config-step">
+                                    03
+                                </span>
+
+                                <h2>18+ mode</h2>
+
+                                <p>
+                                    Enable adult-only content
+                                    for your group.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <label class="age-toggle">
+
+                            <input
+                                type="checkbox"
+                                id="adultMode"
+                            >
+
+                            <span class="toggle-slider"></span>
+
+                            <span class="age-toggle-text">
+                                <strong>I'm 18 or older</strong>
+
+                                <small>
+                                    Show 18+ content
+                                </small>
+                            </span>
+
+                        </label>
+
+                        <div
+                            class="age-warning hidden"
+                            id="ageWarning"
+                        >
+                            18+ mode is enabled. Adult content
+                            may appear in this game.
+                        </div>
+
+                    </section>
+
+
+                    <!-- START GAME -->
+                    <div class="start-game-container">
+
+                        <p
+                            class="configuration-error hidden"
+                            id="configurationError"
+                        >
+                            Please select a category first.
+                        </p>
+
+                        <button
+                            class="btn btn-primary start-game-btn"
+                            id="startGameBtn"
+                        >
+                            Start Game
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- GAMEPLAY SCREEN -->
+<section
+    class="gameplay-section hidden"
+    id="gameplaySection"
+>
+
+    <div class="container">
+
+        <div class="gameplay-topbar">
+
+            <div>
+                <span class="gameplay-label">
+                    NOW PLAYING
+                </span>
+
+                <h1 id="playGameName">
+                    Truth or Dare
+                </h1>
+            </div>
+
+            <button
+                class="btn btn-secondary quit-game-btn"
+                id="quitGameBtn"
+            >
+                Quit Game
+            </button>
+
+        </div>
+
+
+        <!-- GAME DETAILS -->
+        <div class="gameplay-details">
+
+            <span id="playCategory">
+                General
+            </span>
+
+            <span class="details-divider">•</span>
+
+            <span id="playIntensity">
+                Level 3
+            </span>
+
+        </div>
+
+
+        <!-- CONTENT CARD -->
+        <div class="content-card-wrapper">
+
+            <div
+                class="content-card"
+                id="contentCard"
+            >
+
+                <span
+                    class="content-type"
+                    id="contentType"
+                >
+                    QUESTION
+                </span>
+
+                <div
+                    class="content-icon"
+                    aria-hidden="true"
+                >
+                    ✦
+                </div>
+
+                <p
+                    class="content-text"
+                    id="contentText"
+                >
+                    Your question will appear here.
+                </p>
+
+                <span
+                    class="content-number"
+                    id="contentNumber"
+                >
+                    CARD 01
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT STATUS -->
+        <div
+            class="gameplay-status hidden"
+            id="contentLoading"
+        >
+            <div class="loading-spinner"></div>
+            <p>Getting your next card...</p>
+        </div>
+
+        <div
+            class="gameplay-error hidden"
+            id="contentError"
+        >
+            <p id="contentErrorMessage">
+                Unable to load content.
+            </p>
+
+            <button
+                class="btn btn-secondary"
+                id="retryContentBtn"
+            >
+                Try Again
+            </button>
+        </div>
+
+
+        <!-- NEXT BUTTON -->
+        <div class="gameplay-actions">
+
+            <button
+                class="btn btn-primary next-content-btn"
+                id="nextContentBtn"
+            >
+                Next
+                <span aria-hidden="true">→</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <p>
+                Good times. Great memories.
+            </p>
+
+            <p class="footer-copyright">
+                © 2026 Dah! All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+</html>

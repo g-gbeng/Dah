@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Dah! — fun party games for sleepovers, hangouts, dates, birthdays and unforgettable moments."
+    >
+
+    <title>Dah! — Let's Play</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">D</span>
+                <span class="brand-name">Dah!</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="#games">Games</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="games.html" class="btn btn-primary nav-play-btn">
+                    Play Now
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+
+            <a href="#games">Games</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="about.html">About</a>
+
+            <a href="games.html" class="btn btn-primary mobile-play-btn">
+                Play Now
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="hero">
+
+            <div class="hero-decoration hero-decoration-one"></div>
+            <div class="hero-decoration hero-decoration-two"></div>
+            <div class="hero-decoration hero-decoration-three"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content slide-up">
+
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Pick a game. Start the chaos.
+                    </div>
+
+                    <h1>
+                        Good times
+                        <span>start with</span>
+                        <strong>Dah!</strong>
+                    </h1>
+
+                    <p class="hero-description">
+                        Fun party games for sleepovers, dates, birthdays,
+                        picnics, hangouts and those moments when someone
+                        says, “What should we do?”
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="games.html" class="btn btn-primary hero-main-btn">
+                            Let's Play
+                            <span>→</span>
+                        </a>
+
+                        <a href="#games" class="btn btn-outline">
+                            Explore Games
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note">
+                        <span>✓</span>
+                        No account. No setup. Just play.
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual scale-in">
+
+                    <div class="game-stack">
+
+                        <div class="floating-card floating-card-top">
+                            <span>🔥</span>
+                            <div>
+                                <small>Tonight's vibe</small>
+                                <strong>WILD</strong>
+                            </div>
+                        </div>
+
+                        <div class="main-game-card">
+
+                            <div class="card-top">
+                                <span class="mini-label">DAH! GAME</span>
+                                <span class="card-number">01</span>
+                            </div>
+
+                            <div class="game-symbol">
+                                ?
+                            </div>
+
+                            <p class="game-card-label">
+                                TRUTH OR DARE
+                            </p>
+
+                            <h2>
+                                Who's brave<br>
+                                enough?
+                            </h2>
+
+                            <div class="card-bottom">
+                                <span>Pick your poison.</span>
+                                <span class="arrow-circle">→</span>
+                            </div>
+
+                        </div>
+
+                        <div class="floating-card floating-card-bottom">
+                            <span>😂</span>
+                            <div>
+                                <small>Players are</small>
+                                <strong>LAUGHING</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUICK PLAY
+        ========================== -->
+        <section class="quick-play-section">
+
+            <div class="container">
+
+                <div class="quick-play-card">
+
+                    <div class="quick-play-icon">
+                        ⚡
+                    </div>
+
+                    <div class="quick-play-content">
+                        <span class="section-eyebrow">CAN'T DECIDE?</span>
+
+                        <h2>
+                            Just hit Quick Play.
+                        </h2>
+
+                        <p>
+                            We'll pick something fun and get you playing
+                            in seconds.
+                        </p>
+                    </div>
+
+                    <a href="games.html?mode=quick" class="btn btn-secondary">
+                        Quick Play
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GAME DISCOVERY
+        ========================== -->
+        <section class="games-section" id="games">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-eyebrow">
+                            PICK YOUR VIBE
+                        </span>
+
+                        <h2>
+                            What are we playing?
+                        </h2>
+                    </div>
+
+                    <a href="games.html" class="section-link">
+                        See all games →
+                    </a>
+
+                </div>
+
+
+                <div class="game-grid">
+
+                    <!-- Truth or Dare -->
+                    <a
+                        href="games.html?game=truth-or-dare"
+                        class="game-tile game-tile-large truth-dare"
+                    >
+
+                        <div class="tile-icon">?</div>
+
+                        <div class="tile-content">
+
+                            <span class="tile-tag">
+                                CLASSIC
+                            </span>
+
+                            <h3>
+                                Truth<br>
+                                or Dare
+                            </h3>
+
+                            <p>
+                                Choose wisely.
+                            </p>
+
+                        </div>
+
+                        <span class="tile-arrow">↗</span>
+
+                    </a>
+
+
+                    <!-- Would You Rather -->
+                    <a
+                        href="games.html?game=would-you-rather"
+                        class="game-tile would-rather"
+                    >
+
+                        <div class="tile-icon">↔</div>
+
+                        <div class="tile-content">
+
+                            <span class="tile-tag">
+                                CHOICES
+                            </span>
+
+                            <h3>
+                                Would You<br>
+                                Rather?
+                            </h3>
+
+                        </div>
+
+                        <span class="tile-arrow">↗</span>
+
+                    </a>
+
+
+                    <!-- Never Have I Ever -->
+                    <a
+                        href="games.html?game=never-have-i-ever"
+                        class="game-tile never-have"
+                    >
+
+                        <div class="tile-icon">✋</div>
+
+                        <div class="tile-content">
+
+                            <span class="tile-tag">
+                                CONFESSIONS
+                            </span>
+
+                            <h3>
+                                Never Have<br>
+                                I Ever
+                            </h3>
+
+                        </div>
+
+                        <span class="tile-arrow">↗</span>
+
+                    </a>
+
+
+                    <!-- Most Likely To -->
+                    <a
+                        href="games.html?game=most-likely-to"
+                        class="game-tile most-likely"
+                    >
+
+                        <div class="tile-icon">👀</div>
+
+                        <div class="tile-content">
+
+                            <span class="tile-tag">
+                                GROUP
+                            </span>
+
+                            <h3>
+                                Most Likely<br>
+                                To
+                            </h3>
+
+                        </div>
+
+                        <span class="tile-arrow">↗</span>
+
+                    </a>
+
+
+                    <!-- Hot Seat -->
+                    <a
+                        href="games.html?game=hot-seat"
+                        class="game-tile hot-seat"
+                    >
+
+                        <div class="tile-icon">🔥</div>
+
+                        <div class="tile-content">
+
+                            <span class="tile-tag">
+                                BOLD
+                            </span>
+
+                            <h3>
+                                Hot Seat
+                            </h3>
+
+                        </div>
+
+                        <span class="tile-arrow">↗</span>
+
+                    </a>
+
+
+                    <!-- Rapid Fire -->
+                    <a
+                        href="games.html?game=rapid-fire"
+                        class="game-tile rapid-fire"
+                    >
+
+                        <div class="tile-icon">⚡</div>
+
+                        <div class="tile-content">
+
+                            <span class="tile-tag">
+                                FAST
+                            </span>
+
+                            <h3>
+                                Rapid Fire
+                            </h3>
+
+                        </div>
+
+                        <span class="tile-arrow">↗</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+        <section class="how-section" id="how-it-works">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-eyebrow">
+                        IT'S REALLY THAT EASY
+                    </span>
+
+                    <h2>
+                        Open. Choose. Play.
+                    </h2>
+
+                    <p>
+                        No accounts. No complicated setup.
+                        No waiting around.
+                    </p>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div class="step-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Open Dah!
+                        </h3>
+
+                        <p>
+                            Pull up Dah! on your phone and get everyone
+                            together.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div class="step-icon">
+                            🎲
+                        </div>
+
+                        <h3>
+                            Choose a game
+                        </h3>
+
+                        <p>
+                            Pick your vibe, category and intensity —
+                            or let Quick Play decide.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="step-icon">
+                            😂
+                        </div>
+
+                        <h3>
+                            Let the chaos begin
+                        </h3>
+
+                        <p>
+                            Pass the phone around, answer honestly
+                            and have a good time.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OCCASIONS
+        ========================== -->
+        <section class="occasions-section">
+
+            <div class="container">
+
+                <div class="occasion-content">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            MADE FOR THE MOMENT
+                        </span>
+
+                        <h2>
+                            Whatever the occasion,
+                            <span>bring Dah!</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="occasion-list">
+
+                        <span class="occasion-pill">Sleepovers</span>
+                        <span class="occasion-pill">Birthdays</span>
+                        <span class="occasion-pill">Date Nights</span>
+                        <span class="occasion-pill">Picnics</span>
+                        <span class="occasion-pill">House Parties</span>
+                        <span class="occasion-pill">Road Trips</span>
+                        <span class="occasion-pill">Hangouts</span>
+                        <span class="occasion-pill">Just Because</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
+        <section class="final-cta">
+
+            <div class="container">
+
+                <div class="final-cta-card">
+
+                    <div class="cta-decoration">
+                        ✦
+                    </div>
+
+                    <span class="section-eyebrow">
+                        READY?
+                    </span>
+
+                    <h2>
+                        Stop scrolling.<br>
+                        Start playing.
+                    </h2>
+
+                    <p>
+                        Your next laugh is literally one click away.
+                    </p>
+
+                    <a href="games.html" class="btn btn-primary final-btn">
+                        Let's Play
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">D</span>
+                    <span class="brand-name">Dah!</span>
+                </a>
+
+                <p>
+                    Good games. Good people. Good times.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="games.html">Games</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+
+            <div class="footer-copy">
+                © 2026 Dah! All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

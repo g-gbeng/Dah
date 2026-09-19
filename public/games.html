@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore fun party games on Dah! and find the perfect game for your next hangout."
+    >
+
+    <title>Explore Games | Dah!</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/games.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+                Dah<span>!</span>
+            </a>
+
+
+            <nav class="desktop-nav">
+
+                <a href="index.html">Home</a>
+
+                <a
+                    href="games.html"
+                    class="active"
+                >
+                    Games
+                </a>
+
+                <a href="index.html#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+
+            <a
+                href="games.html"
+                class="btn btn-primary nav-play-btn"
+            >
+                Play Now
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="games.html">
+                Games
+            </a>
+
+            <a href="index.html#how-it-works">
+                How It Works
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a
+                href="games.html"
+                class="btn btn-primary mobile-play-btn"
+            >
+                Play Now
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         PAGE HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="games-hero">
+
+            <div class="container">
+
+                <div class="section-heading fade-in">
+
+                    <span class="eyebrow">
+                        PICK YOUR VIBE
+                    </span>
+
+                    <h1>
+                        What are we<br>
+                        playing today?
+                    </h1>
+
+                    <p>
+                        From silly challenges to deep conversations,
+                        choose a game and let the fun begin.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             GAMES SECTION
+        ========================================== -->
+
+        <section class="games-section">
+
+            <div class="container">
+
+                <div class="games-section-top">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            THE DAH! COLLECTION
+                        </span>
+
+                        <h2>
+                            Find your game
+                        </h2>
+
+                    </div>
+
+                    <span
+                        class="games-count"
+                        id="gamesCount"
+                    >
+                        Loading games...
+                    </span>
+
+                </div>
+
+
+
+                <!-- LOADING STATE -->
+
+                <div
+                    class="games-status"
+                    id="gamesLoading"
+                >
+
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        Getting the games ready...
+                    </p>
+
+                </div>
+
+
+
+                <!-- ERROR STATE -->
+
+                <div
+                    class="games-status hidden"
+                    id="gamesError"
+                >
+
+                    <div class="status-icon">
+                        !
+                    </div>
+
+                    <h3>
+                        Something went wrong
+                    </h3>
+
+                    <p>
+                        We couldn't load the games. Please try again.
+                    </p>
+
+                    <button
+                        class="btn btn-primary"
+                        id="retryGames"
+                    >
+                        Try Again
+                    </button>
+
+                </div>
+
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    class="games-status hidden"
+                    id="gamesEmpty"
+                >
+
+                    <div class="status-icon">
+                        ☹
+                    </div>
+
+                    <h3>
+                        No games available
+                    </h3>
+
+                    <p>
+                        Check back soon for more games.
+                    </p>
+
+                </div>
+
+
+
+                <!-- GAMES GRID -->
+
+                <div
+                    class="games-grid"
+                    id="gamesGrid"
+                >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             BOTTOM CTA
+        ========================================== -->
+
+        <section class="games-bottom-cta">
+
+            <div class="container">
+
+                <div class="games-cta-card scale-in">
+
+                    <span class="eyebrow">
+                        CAN'T DECIDE?
+                    </span>
+
+                    <h2>
+                        Let Dah! choose<br>
+                        for you.
+                    </h2>
+
+                    <p>
+                        Take the pressure off. Pick a random game
+                        and start having fun.
+                    </p>
+
+                    <a
+                        href="game.html?mode=quick"
+                        class="btn btn-secondary"
+                    >
+                        Quick Play
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <a
+                href="index.html"
+                class="brand footer-brand"
+            >
+                Dah<span>!</span>
+            </a>
+
+            <p>
+                Less scrolling. More playing.
+            </p>
+
+            <p class="footer-copy">
+                © 2026 Dah! All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/app.js"></script>
+
+    <script src="js/games.js"></script>
+
+</body>
+
+</html>
