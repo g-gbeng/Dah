@@ -154,131 +154,6 @@
                     </div>
 
 
-                    <!-- CATEGORY -->
-                    <section class="config-card">
-
-                        <div class="config-card-heading">
-
-                            <div>
-                                <span class="config-step">
-                                    01
-                                </span>
-
-                                <h2>Choose a category</h2>
-
-                                <p>
-                                    What kind of questions or
-                                    challenges are you in the mood for?
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="option-grid"
-                            id="categoryOptions"
-                        >
-                            <!-- Categories added with JavaScript -->
-                        </div>
-
-                    </section>
-
-
-                    <!-- INTENSITY -->
-                    <section class="config-card">
-
-                        <div class="config-card-heading">
-
-                            <div>
-                                <span class="config-step">
-                                    02
-                                </span>
-
-                                <h2>Choose your intensity</h2>
-
-                                <p>
-                                    How bold do you want to get?
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="intensity-options"
-                            id="intensityOptions"
-                        >
-
-                            <label class="intensity-option">
-                                <input
-                                    type="radio"
-                                    name="intensity"
-                                    value="1"
-                                >
-
-                                <span class="intensity-content">
-                                    <strong>Level 1</strong>
-                                    <small>Chill</small>
-                                </span>
-                            </label>
-
-                            <label class="intensity-option">
-                                <input
-                                    type="radio"
-                                    name="intensity"
-                                    value="2"
-                                >
-
-                                <span class="intensity-content">
-                                    <strong>Level 2</strong>
-                                    <small>Fun</small>
-                                </span>
-                            </label>
-
-                            <label class="intensity-option">
-                                <input
-                                    type="radio"
-                                    name="intensity"
-                                    value="3"
-                                    checked
-                                >
-
-                                <span class="intensity-content">
-                                    <strong>Level 3</strong>
-                                    <small>Bold</small>
-                                </span>
-                            </label>
-
-                            <label class="intensity-option">
-                                <input
-                                    type="radio"
-                                    name="intensity"
-                                    value="4"
-                                >
-
-                                <span class="intensity-content">
-                                    <strong>Level 4</strong>
-                                    <small>Spicy</small>
-                                </span>
-                            </label>
-
-                            <label class="intensity-option">
-                                <input
-                                    type="radio"
-                                    name="intensity"
-                                    value="5"
-                                >
-
-                                <span class="intensity-content">
-                                    <strong>Level 5</strong>
-                                    <small>Wild</small>
-                                </span>
-                            </label>
-
-                        </div>
-
-                    </section>
-
-
                     <!-- AGE RATING -->
                     <section
                         class="config-card age-rating-card"
@@ -289,7 +164,7 @@
 
                             <div>
                                 <span class="config-step">
-                                    03
+                                    01
                                 </span>
 
                                 <h2>18+ mode</h2>
@@ -336,11 +211,9 @@
                     <div class="start-game-container">
 
                         <p
-                            class="configuration-error hidden"
-                            id="configurationError"
-                        >
-                            Please select a category first.
-                        </p>
+    class="configuration-error hidden"
+    id="configurationError"
+></p>
 
                         <button
                             class="btn btn-primary start-game-btn"
@@ -389,19 +262,7 @@
 
 
         <!-- GAME DETAILS -->
-        <div class="gameplay-details">
 
-            <span id="playCategory">
-                General
-            </span>
-
-            <span class="details-divider">•</span>
-
-            <span id="playIntensity">
-                Level 3
-            </span>
-
-        </div>
 
 
         <!-- CONTENT CARD -->
@@ -413,33 +274,39 @@
             >
 
                 <span
-                    class="content-type"
-                    id="contentType"
-                >
-                    QUESTION
-                </span>
+    class="content-type"
+    id="contentType"
+>
+    QUESTION
+</span>
 
-                <div
-                    class="content-icon"
-                    aria-hidden="true"
-                >
-                    ✦
-                </div>
+<div
+    class="content-icon"
+    aria-hidden="true"
+>
+    ✦
+</div>
 
-                <p
-                    class="content-text"
-                    id="contentText"
-                >
-                    Your question will appear here.
-                </p>
+<p
+    class="content-text"
+    id="contentText"
+>
+    Your question will appear here.
+</p>
 
-                <span
-                    class="content-number"
-                    id="contentNumber"
-                >
-                    CARD 01
-                </span>
+<span
+    class="content-meta"
+    id="contentMeta"
+>
+    General • Level 3
+</span>
 
+<span
+    class="content-number"
+    id="contentNumber"
+>
+    CARD 01
+</span>
             </div>
 
         </div>

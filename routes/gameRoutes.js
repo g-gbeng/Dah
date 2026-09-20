@@ -14,7 +14,7 @@ const games = [
     {
         id: "truth-or-dare",
         name: "Truth or Dare",
-        description: "Choose truth, take a dare, or let Dah! decide.",
+        description: "The truth or a dare?, let Dah! decide.",
         icon: "🎲",
 
         contentTypes: [
@@ -387,8 +387,16 @@ if (ageRating) {
 
 
 
+
 /* =========================================
    GET RANDOM GAME CONTENT
+
+   Selection rules:
+   - Game is required for normal gameplay
+   - Age rating is a hard boundary
+   - Category does NOT restrict selection
+   - Intensity does NOT restrict selection
+   - Previously used cards are excluded
 ========================================= */
 
 router.get("/random", async (req, res) => {
@@ -397,96 +405,73 @@ router.get("/random", async (req, res) => {
 
         const {
             game,
-            category,
-            intensity,
             ageRating = "general",
             exclude
         } = req.query;
 
+
+        /* =========================================
+           VALIDATE AGE RATING
+        ========================================= */
+
+        if (
+            ageRating !== "general" &&
+            ageRating !== "18+"
+        ) {
+
+            return res.status(400).json({
+                success: false,
+                message: "Invalid age rating."
+            });
+
+        }
+
+
+        /* =========================================
+           BUILD BASE FILTER
+        ========================================= */
+
         const filter = {
-    active: true,
-    ageRating
-};
+            active: true,
+            ageRating
+        };
 
-if (ageRating === "18+") {
-
-    filter.category = "18+";
-
-} else {
-
-    filter.category = {
-        $ne: "18+"
-    };
-
-}
 
         /* =========================================
            GAME FILTER
         ========================================= */
 
         if (game) {
+
             filter.game = game;
+
         }
 
-        /* =========================================
-           CATEGORY FILTER
-        ========================================= */
-
-        if (category) {
-
-    if (
-        ageRating === "18+" &&
-        category !== "18+"
-    ) {
-
-        return res.status(400).json({
-            success: false,
-            message:
-                "18+ mode can only use 18+ content."
-        });
-
-    }
-
-    if (
-        ageRating === "general" &&
-        category === "18+"
-    ) {
-
-        return res.status(400).json({
-            success: false,
-            message:
-                "18+ content is not available in general mode."
-        });
-
-    }
-
-    filter.category = category;
-
-}
 
         /* =========================================
-           INTENSITY FILTER
+           AGE-SAFE CATEGORY FILTER
         ========================================= */
 
-        if (intensity !== undefined) {
+        /*
+        General mode:
+        - Allows every category except 18+
 
-            const parsedIntensity = Number(intensity);
+        18+ mode:
+        - Allows only 18+ category
+        */
 
-            if (
-                Number.isNaN(parsedIntensity) ||
-                parsedIntensity < 1 ||
-                parsedIntensity > 5
-            ) {
+        if (ageRating === "18+") {
 
-                return res.status(400).json({
-                    success: false,
-                    message: "Intensity must be between 1 and 5."
-                });
+            filter.category = "18+";
 
-            }
+        } else {
 
-            filter.intensity = parsedIntensity;
+            filter.category = {
+                $ne: "18+"
+            };
+
         }
+
 
         /* =========================================
            EXCLUDE PREVIOUS CONTENT
@@ -513,6 +498,7 @@ if (ageRating === "18+") {
 
         }
 
+
         /* =========================================
            DEBUG
         ========================================= */
@@ -520,26 +506,29 @@ if (ageRating === "18+") {
         console.log("-----------------------------------");
         console.log("RANDOM CONTENT REQUEST");
         console.log("Game:", game);
-        console.log("Category:", category);
-        console.log("Intensity:", intensity);
         console.log("Age Rating:", ageRating);
         console.log("Excluded IDs:", excludedIds);
         console.log("Mongo Filter:", filter);
+
 
         /* =========================================
            GET RANDOM CONTENT
         ========================================= */
 
         const content = await GameContent.aggregate([
+
             {
                 $match: filter
             },
+
             {
                 $sample: {
                     size: 1
                 }
             }
+
         ]);
+
 
         /* =========================================
            NO CONTENT LEFT
@@ -550,13 +539,22 @@ if (ageRating === "18+") {
             console.log("NO UNUSED CONTENT LEFT");
 
             return res.status(404).json({
+
                 success: false,
+
                 exhausted: true,
+
                 message:
-                    "No unused content is available for these settings."
+                    "No unused content is available for this game and age rating."
+
             });
 
         }
+
+
+        /* =========================================
+           LOG RESULT
+        ========================================= */
 
         console.log(
             "RETURNED CONTENT ID:",
@@ -570,14 +568,19 @@ if (ageRating === "18+") {
 
         console.log("-----------------------------------");
 
+
         /* =========================================
            RESPONSE
         ========================================= */
 
         res.status(200).json({
+
             success: true,
+
             exhausted: false,
+
             content: content[0]
+
         });
 
     } catch (error) {
@@ -588,14 +591,18 @@ if (ageRating === "18+") {
         );
 
         res.status(500).json({
+
             success: false,
+
             message:
                 "Failed to retrieve random game content."
+
         });
 
     }
 
 });
+
 
 /* =========================================
    QUICK PLAY

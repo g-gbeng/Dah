@@ -11,21 +11,18 @@ const gameIcon = document.getElementById("gameIcon");
 const gameName = document.getElementById("gameName");
 const gameDescription = document.getElementById("gameDescription");
 
-const categoryOptions = document.getElementById("categoryOptions");
 const adultMode = document.getElementById("adultMode");
 const ageWarning = document.getElementById("ageWarning");
 const ageRatingCard = document.getElementById("ageRatingCard");
 
 const startGameBtn = document.getElementById("startGameBtn");
-const configurationError = document.getElementById("configurationError");
 
 const gameplaySection = document.getElementById("gameplaySection");
 const playGameName = document.getElementById("playGameName");
-const playCategory = document.getElementById("playCategory");
-const playIntensity = document.getElementById("playIntensity");
 
 const contentCard = document.getElementById("contentCard");
 const contentType = document.getElementById("contentType");
+const contentMeta = document.getElementById("contentMeta");
 const contentText = document.getElementById("contentText");
 const contentNumber = document.getElementById("contentNumber");
 
@@ -49,11 +46,9 @@ const selectedMode = urlParams.get("mode") || "classic";
 const isPlayMode = urlParams.get("play") === "true";
 
 let selectedGame = null;
-let selectedCategory = null;
 let currentCardNumber = 0;
 
 let usedContentIds = [];
-let quickPlayMode = false;
 
 
 /* =========================================
@@ -86,23 +81,23 @@ async function initializeGamePage() {
 
     showLoading();
 
-if (selectedMode === "quick") {
+    if (selectedMode === "quick") {
 
-    await initializeQuickPlay();
+        await initializeQuickPlay();
 
-    return;
+        return;
 
-}
+    }
 
-if (!selectedGameId) {
+    if (!selectedGameId) {
 
-    showError(
-        "No game was selected. Please choose a game first."
-    );
+        showError(
+            "No game was selected. Please choose a game first."
+        );
 
-    return;
+        return;
 
-}
+    }
 
     await fetchSelectedGame();
 
@@ -146,7 +141,10 @@ async function fetchSelectedGame() {
 
     } catch (error) {
 
-        console.error("Game loading error:", error);
+        console.error(
+            "Game loading error:",
+            error
+        );
 
         showError(
             "Unable to connect to the server. Please try again."
@@ -178,7 +176,9 @@ async function initializeQuickPlay() {
 
         if (!data.games || data.games.length === 0) {
 
-            showError("No games are currently available.");
+            showError(
+                "No games are currently available."
+            );
 
             return;
 
@@ -194,7 +194,10 @@ async function initializeQuickPlay() {
 
     } catch (error) {
 
-        console.error("Quick Play error:", error);
+        console.error(
+            "Quick Play error:",
+            error
+        );
 
         showError(
             "Unable to start Quick Play. Please try again."
@@ -211,106 +214,19 @@ async function initializeQuickPlay() {
 
 function renderGameConfiguration() {
 
-    gameIcon.textContent = selectedGame.icon || "🎲";
+    gameIcon.textContent =
+        selectedGame.icon || "🎲";
 
-    gameName.textContent = selectedGame.name;
+    gameName.textContent =
+        selectedGame.name;
 
     gameDescription.textContent =
         selectedGame.description ||
         "Get ready to play and have some fun.";
 
-    renderCategories();
-
     configureAgeRating();
 
     hideLoading();
-
-}
-
-
-/* =========================================
-   RENDER CATEGORIES
-========================================= */
-
-function renderCategories() {
-
-    categoryOptions.innerHTML = "";
-
- let categories = selectedGame.categories || [
-    "general",
-    "funny",
-    "deep",
-    "dating",
-    "spicy"
-];
-
-if (!adultMode.checked) {
-
-    categories = categories.filter(
-        category => category !== "18+"
-    );
-
-} else {
-
-    categories = ["18+"];
-
-}
-
-if (categories.length === 0) {
-
-    categories = ["general"];
-
-}
-
-    categories.forEach((category, index) => {
-
-        const wrapper = document.createElement("div");
-
-        wrapper.className = "category-option";
-
-        const inputId = `category-${index}`;
-
-        const input = document.createElement("input");
-
-        input.type = "radio";
-        input.name = "category";
-        input.id = inputId;
-        input.value = category;
-
-        const label = document.createElement("label");
-
-        label.htmlFor = inputId;
-
-        label.textContent =
-            categoryLabels[category] ||
-            formatCategory(category);
-
-        input.addEventListener("change", () => {
-
-            selectedCategory = category;
-
-            configurationError.classList.add("hidden");
-
-        });
-
-        wrapper.appendChild(input);
-        wrapper.appendChild(label);
-
-        categoryOptions.appendChild(wrapper);
-
-    });
-
-    const firstCategory = categoryOptions.querySelector(
-        'input[type="radio"]'
-    );
-
-    if (firstCategory) {
-
-        firstCategory.checked = true;
-
-        selectedCategory = firstCategory.value;
-
-    }
 
 }
 
@@ -329,6 +245,8 @@ function configureAgeRating() {
         ageRatingCard.classList.add("hidden");
 
         adultMode.checked = false;
+
+        ageWarning.classList.add("hidden");
 
         return;
 
@@ -355,8 +273,6 @@ adultMode.addEventListener("change", () => {
 
     }
 
-    renderCategories();
-
 });
 
 
@@ -372,43 +288,42 @@ startGameBtn.addEventListener("click", () => {
 
     }
 
-    if (!selectedCategory) {
-
-        configurationError.textContent =
-            "Please select a category first.";
-
-        configurationError.classList.remove("hidden");
-
-        return;
-
-    }
-
-    const selectedIntensity = document.querySelector(
-        'input[name="intensity"]:checked'
-    );
-
-    const intensity = selectedIntensity
-        ? Number(selectedIntensity.value)
-        : 3;
-
     const ageRating = adultMode.checked
         ? "18+"
         : "general";
 
+
+    /*
+    =========================================
+    GAME SETTINGS
+
+    Category and intensity are intentionally
+    NOT selected here.
+
+    The backend will randomly select from
+    the entire eligible content pool.
+
+    The selected card's category and
+    intensity will be displayed during play.
+    =========================================
+    */
+
     const gameSettings = {
 
         game: selectedGame.id,
-        category: selectedCategory,
-        intensity,
+
         ageRating,
+
         mode: selectedMode
 
     };
+
 
     sessionStorage.setItem(
         "dahGameSettings",
         JSON.stringify(gameSettings)
     );
+
 
     window.location.href =
         `game.html?game=${encodeURIComponent(selectedGame.id)}&play=true`;
@@ -422,9 +337,8 @@ startGameBtn.addEventListener("click", () => {
 
 function initializePlayMode() {
 
-    const savedSettings = sessionStorage.getItem(
-        "dahGameSettings"
-    );
+    const savedSettings =
+        sessionStorage.getItem("dahGameSettings");
 
     if (!savedSettings) {
 
@@ -436,28 +350,55 @@ function initializePlayMode() {
 
     try {
 
-        const settings = JSON.parse(savedSettings);
+        const settings =
+            JSON.parse(savedSettings);
+
+
+        /*
+        =========================================
+        ONLY GAME + AGE RATING ARE REQUIRED
+        =========================================
+        */
 
         if (
             !settings.game ||
-            !settings.category ||
-            !settings.intensity ||
             !settings.ageRating
         ) {
 
-            throw new Error("Invalid game settings.");
+            throw new Error(
+                "Invalid game settings."
+            );
 
         }
+
+
+        if (
+            settings.ageRating !== "general" &&
+            settings.ageRating !== "18+"
+        ) {
+
+            throw new Error(
+                "Invalid age rating."
+            );
+
+        }
+
 
         startGameplay(settings);
 
     } catch (error) {
 
-        console.error("Play mode initialization error:", error);
+        console.error(
+            "Play mode initialization error:",
+            error
+        );
 
-        sessionStorage.removeItem("dahGameSettings");
+        sessionStorage.removeItem(
+            "dahGameSettings"
+        );
 
-        window.location.href = "games.html";
+        window.location.href =
+            "games.html";
 
     }
 
@@ -471,24 +412,29 @@ function initializePlayMode() {
 async function startGameplay(settings) {
 
     gameConfig.classList.add("hidden");
+
     gameLoading.classList.add("hidden");
+
     gameError.classList.add("hidden");
 
     gameplaySection.classList.remove("hidden");
 
-    playGameName.textContent = formatCategory(
-        settings.game
-    );
 
-    playCategory.textContent =
-        categoryLabels[settings.category] ||
-        formatCategory(settings.category);
+    playGameName.textContent =
+        formatCategory(settings.game);
 
-    playIntensity.textContent =
-        `Level ${settings.intensity}`;
+
+    /*
+    =========================================
+    RESET GAME SESSION
+    =========================================
+    */
 
     currentCardNumber = 0;
+
     usedContentIds = [];
+
+
     await fetchNextContent(settings);
 
 }
@@ -502,12 +448,35 @@ async function fetchNextContent(settings) {
 
     showContentLoading();
 
-    const queryParams = new URLSearchParams();
+    const queryParams =
+        new URLSearchParams();
 
-    queryParams.set("game", settings.game);
-    queryParams.set("category", settings.category);
-    queryParams.set("intensity", settings.intensity);
-    queryParams.set("ageRating", settings.ageRating);
+
+    /*
+    =========================================
+    CONTENT SELECTION
+
+    Only these are sent:
+
+    - game
+    - ageRating
+    - exclude
+
+    Category and intensity are NOT sent
+    because they should NOT filter the pool.
+    =========================================
+    */
+
+    queryParams.set(
+        "game",
+        settings.game
+    );
+
+    queryParams.set(
+        "ageRating",
+        settings.ageRating
+    );
+
 
     if (usedContentIds.length > 0) {
 
@@ -518,34 +487,77 @@ async function fetchNextContent(settings) {
 
     }
 
+
     const requestUrl =
         `/api/games/random?${queryParams.toString()}`;
 
-    console.log("=================================");
-    console.log("FETCHING NEXT CONTENT");
-    console.log("Used IDs:", usedContentIds);
-    console.log("Request URL:", requestUrl);
+
+    console.log(
+        "================================="
+    );
+
+    console.log(
+        "FETCHING NEXT CONTENT"
+    );
+
+    console.log(
+        "Used IDs:",
+        usedContentIds
+    );
+
+    console.log(
+        "Request URL:",
+        requestUrl
+    );
+
 
     try {
 
-        const response = await fetch(requestUrl);
+        const response =
+            await fetch(requestUrl);
 
-        const data = await response.json();
+        const data =
+            await response.json();
 
-        console.log("Server response:", data);
 
-        if (response.status === 404 && data.exhausted) {
+        console.log(
+            "Server response:",
+            data
+        );
+
+
+        /*
+        =========================================
+        CONTENT EXHAUSTED
+        =========================================
+        */
+
+        if (
+            response.status === 404 &&
+            data.exhausted
+        ) {
 
             showContentError(
-                "You've reached the end of the available cards for these settings."
+                "You've reached the end of the available cards for this game."
             );
 
             nextContentBtn.disabled = true;
 
             return;
+
         }
 
-        if (!response.ok || !data.success) {
+
+        /*
+        =========================================
+        GENERAL SERVER ERROR
+        =========================================
+        */
+
+        if (
+            !response.ok ||
+            !data.success
+        ) {
 
             throw new Error(
                 data.message ||
@@ -553,6 +565,13 @@ async function fetchNextContent(settings) {
             );
 
         }
+
+
+        /*
+        =========================================
+        MAKE SURE CONTENT EXISTS
+        =========================================
+        */
 
         if (!data.content) {
 
@@ -562,19 +581,27 @@ async function fetchNextContent(settings) {
 
         }
 
-        /* =========================================
-           STORE CONTENT ID
-        ========================================= */
 
-        const contentId = String(
-            data.content._id
-        );
+        /*
+        =========================================
+        STORE CONTENT ID
+        =========================================
+        */
 
-        if (!usedContentIds.includes(contentId)) {
+        const contentId =
+            String(data.content._id);
 
-            usedContentIds.push(contentId);
+
+        if (
+            !usedContentIds.includes(contentId)
+        ) {
+
+            usedContentIds.push(
+                contentId
+            );
 
         }
+
 
         console.log(
             "Received ID:",
@@ -586,9 +613,26 @@ async function fetchNextContent(settings) {
             usedContentIds
         );
 
+
+        /*
+        =========================================
+        INCREMENT CARD NUMBER
+        =========================================
+        */
+
         currentCardNumber++;
 
-        renderContent(data.content);
+
+        /*
+        =========================================
+        RENDER CARD
+        =========================================
+        */
+
+        renderContent(
+            data.content
+        );
+
 
     } catch (error) {
 
@@ -614,20 +658,94 @@ async function fetchNextContent(settings) {
 function renderContent(content) {
 
     contentLoading.classList.add("hidden");
+
     contentError.classList.add("hidden");
 
     contentCard.classList.remove("hidden");
 
-    contentType.textContent =
-        formatCategory(content.type || "question")
-        .toUpperCase();
 
-    contentText.textContent = content.text;
+    /*
+    =========================================
+    CONTENT TYPE
+    =========================================
+    */
+
+    contentType.textContent =
+        formatCategory(
+            content.type || "question"
+        ).toUpperCase();
+
+
+    /*
+    =========================================
+    CONTENT METADATA
+
+    Category and intensity now come directly
+    from the database for the current card.
+    =========================================
+    */
+
+    if (contentMeta) {
+
+        const category =
+            categoryLabels[content.category] ||
+            formatCategory(
+                content.category ||
+                "general"
+            );
+
+
+        const intensity =
+            content.intensity
+                ? `Level ${content.intensity}`
+                : "";
+
+
+        if (intensity) {
+
+            contentMeta.textContent =
+                `${category} • ${intensity}`;
+
+        } else {
+
+            contentMeta.textContent =
+                category;
+
+        }
+
+    }
+
+
+    /*
+    =========================================
+    CONTENT TEXT
+    =========================================
+    */
+
+    contentText.textContent =
+        content.text;
+
+
+    /*
+    =========================================
+    CARD NUMBER
+    =========================================
+    */
 
     contentNumber.textContent =
-        `CARD ${String(currentCardNumber).padStart(2, "0")}`;
+        `CARD ${String(
+            currentCardNumber
+        ).padStart(2, "0")}`;
 
-    contentCard.style.animation = "none";
+
+    /*
+    =========================================
+    CARD ANIMATION
+    =========================================
+    */
+
+    contentCard.style.animation =
+        "none";
 
     void contentCard.offsetWidth;
 
@@ -641,63 +759,121 @@ function renderContent(content) {
    NEXT CONTENT
 ========================================= */
 
-nextContentBtn.addEventListener("click", async () => {
+nextContentBtn.addEventListener(
+    "click",
+    async () => {
 
-    const savedSettings = sessionStorage.getItem(
-        "dahGameSettings"
-    );
+        const savedSettings =
+            sessionStorage.getItem(
+                "dahGameSettings"
+            );
 
-    if (!savedSettings) {
 
-        window.location.href = "games.html";
+        if (!savedSettings) {
 
-        return;
+            window.location.href =
+                "games.html";
+
+            return;
+
+        }
+
+
+        try {
+
+            const settings =
+                JSON.parse(
+                    savedSettings
+                );
+
+            await fetchNextContent(
+                settings
+            );
+
+        } catch (error) {
+
+            console.error(
+                "Next content settings error:",
+                error
+            );
+
+            window.location.href =
+                "games.html";
+
+        }
 
     }
-
-    const settings = JSON.parse(savedSettings);
-
-    await fetchNextContent(settings);
-
-});
+);
 
 
 /* =========================================
    RETRY CONTENT
 ========================================= */
 
-retryContentBtn.addEventListener("click", async () => {
+retryContentBtn.addEventListener(
+    "click",
+    async () => {
 
-    const savedSettings = sessionStorage.getItem(
-        "dahGameSettings"
-    );
+        const savedSettings =
+            sessionStorage.getItem(
+                "dahGameSettings"
+            );
 
-    if (!savedSettings) {
 
-        window.location.href = "games.html";
+        if (!savedSettings) {
 
-        return;
+            window.location.href =
+                "games.html";
+
+            return;
+
+        }
+
+
+        try {
+
+            const settings =
+                JSON.parse(
+                    savedSettings
+                );
+
+            await fetchNextContent(
+                settings
+            );
+
+        } catch (error) {
+
+            console.error(
+                "Retry settings error:",
+                error
+            );
+
+            window.location.href =
+                "games.html";
+
+        }
 
     }
-
-    const settings = JSON.parse(savedSettings);
-
-    await fetchNextContent(settings);
-
-});
+);
 
 
 /* =========================================
    QUIT GAME
 ========================================= */
 
-quitGameBtn.addEventListener("click", () => {
+quitGameBtn.addEventListener(
+    "click",
+    () => {
 
-    sessionStorage.removeItem("dahGameSettings");
+        sessionStorage.removeItem(
+            "dahGameSettings"
+        );
 
-    window.location.href = "games.html";
+        window.location.href =
+            "games.html";
 
-});
+    }
+);
 
 
 /* =========================================
@@ -706,24 +882,38 @@ quitGameBtn.addEventListener("click", () => {
 
 function showContentLoading() {
 
-    contentCard.classList.add("hidden");
+    contentCard.classList.add(
+        "hidden"
+    );
 
-    contentError.classList.add("hidden");
+    contentError.classList.add(
+        "hidden"
+    );
 
-    contentLoading.classList.remove("hidden");
+    contentLoading.classList.remove(
+        "hidden"
+    );
 
 }
 
+
 function showContentError(message) {
 
-    contentCard.classList.add("hidden");
+    contentCard.classList.add(
+        "hidden"
+    );
 
-    contentLoading.classList.add("hidden");
+    contentLoading.classList.add(
+        "hidden"
+    );
 
-    contentError.classList.remove("hidden");
+    contentError.classList.remove(
+        "hidden"
+    );
 
     contentErrorMessage.textContent =
-        message || "Unable to load content.";
+        message ||
+        "Unable to load content.";
 
 }
 
@@ -734,41 +924,66 @@ function showContentError(message) {
 
 function showLoading() {
 
-    gameLoading.classList.remove("hidden");
+    gameLoading.classList.remove(
+        "hidden"
+    );
 
-    gameError.classList.add("hidden");
+    gameError.classList.add(
+        "hidden"
+    );
 
-    gameConfig.classList.add("hidden");
+    gameConfig.classList.add(
+        "hidden"
+    );
 
 }
+
 
 function hideLoading() {
 
-    gameLoading.classList.add("hidden");
+    gameLoading.classList.add(
+        "hidden"
+    );
 
-    gameError.classList.add("hidden");
+    gameError.classList.add(
+        "hidden"
+    );
 
-    gameConfig.classList.remove("hidden");
+    gameConfig.classList.remove(
+        "hidden"
+    );
 
 }
+
 
 function showError(message) {
 
-    gameLoading.classList.add("hidden");
+    gameLoading.classList.add(
+        "hidden"
+    );
 
-    gameConfig.classList.add("hidden");
+    gameConfig.classList.add(
+        "hidden"
+    );
 
-    gameError.classList.remove("hidden");
+    gameError.classList.remove(
+        "hidden"
+    );
 
-    gameErrorMessage.textContent = message;
+    gameErrorMessage.textContent =
+        message;
 
 }
+
 
 function formatCategory(category) {
 
     return String(category)
         .replaceAll("-", " ")
-        .replace(/\b\w/g, letter => letter.toUpperCase());
+        .replace(
+            /\b\w/g,
+            letter => letter.toUpperCase()
+        );
 
 }
 
